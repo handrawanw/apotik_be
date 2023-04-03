@@ -1,0 +1,11 @@
+create migrations
+knex migrate:latest
+
+rollback migrations
+knex migrate:rollback
+
+create seed
+knex seed:make seed_name
+
+run seed
+knex seed:run
